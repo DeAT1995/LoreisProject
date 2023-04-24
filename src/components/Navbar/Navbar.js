@@ -2,26 +2,27 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import LogoLoreis from '../../images/logoLoreisTransparent.png'
-import '../Navbar/Navbar.css'
 
 function NavbarComponent() {
   return (
-    <Navbar expand="lg" variant="light" bg="light">
+    <Navbar style={{backgroundColor: "white", border: "2px solid black", borderRadius: "3px" }} expand="lg" variant="light" >
    
       <Container>
-        <Navbar.Brand href="#">
-            <img src={LogoLoreis} alt="logo" roundedCircle />
+        <Navbar.Brand href="#" >
+            <img src={LogoLoreis} alt="logo" style={{ width: "30%", height: "10%", margin: "0", padding: "0"}}/>
             </Navbar.Brand>
-        <NavDropdown title="Menu" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Home</NavDropdown.Item>
+        <NavDropdown title="MENU" id="collasible-nav-dropdown" >
+                < div style={{ padding: "5%"}}>
+              <NavDropdown.Item href="#action/3.1" >Home</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Sobre mim
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Plataformas</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
-                Separated link
+                Contato
               </NavDropdown.Item>
+              </div>
             </NavDropdown>
       </Container>
     </Navbar>
