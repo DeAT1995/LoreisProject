@@ -13,13 +13,13 @@ function NavbarComponent() {
             </Navbar.Brand>
         <NavDropdown title="MENU" id="collasible-nav-dropdown" >
                 < div style={{ padding: "5%"}}>
-              <NavDropdown.Item href="#action/3.1" >Home</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
+              <NavDropdown.Item href="/home" >Home</NavDropdown.Item>
+              <NavDropdown.Item href="/sobre-mim">
                 Sobre mim
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Plataformas</NavDropdown.Item>
+              <NavDropdown.Item href="/plataformas">Plataformas</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item href="/contato">
                 Contato
               </NavDropdown.Item>
               </div>
